@@ -32,7 +32,7 @@ class Calculator(Frame): #Here Create the class and call the Frame to use all me
         equal = Button(self, text = '=' , bd = 2, bg= 'Thistle' ,
                        command = lambda a = display: evaluate(a))
         equal.pack(side = TOP, expand = YES , fill = BOTH)
-
+ 
 def evaluate(stored):
     try:
         stored.set(eval(stored.get()))
